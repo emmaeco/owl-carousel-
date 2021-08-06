@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+     
+    
+}
+
+.slider-item{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.slider-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.slider-content-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    padding: 0 100px;
+}
+
+.slider-content h1{
+    font-size: 50px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.slider-content p{
+    color: white;
+    font-size: 17px;
+    width: 60%;
+    margin: 0 auto;
+    line-height: 23px;
+}
+
+.slider-action{
+    margin-top: 50px;
+}
+
+.slider-action a{
+    padding: 15px 40px;
+    border-radius: 5px;
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all ease-in-out 300ms;
+}
+
+.slider-action .slider-btn{
+    background-color: green;
+    border: 2px solid green;
+    margin-right: 30px;
+}
+
+.slider-action .slider-btn:hover{
+    background-color: transparent;
+    color: green;
+}
+
+.slider-action .slider-btn2{
+    background-color: blue;
+    border: 2px solid blue;
+}
+
+.slider-action .slider-btn2:hover{
+    background-color: transparent;
+    color: blue;
+}
+.hero-slider .owl-prev , .owl-next{
+    position: absolute;
+    top: 57%;
+    width: 45px;
+    height: 45px;
+    transform: translateY(-50%);
+    border-radius: 50px !important;
+     background-color: white !important;
+}
+.hero-slider .owl-prev img, .hero-slider
+.owl-next img{
+    width: 25px;
+    height: 25px;
+}
+
+.hero-slider .owl-prev{
+    left: 0;
+}
+
+.hero-slider .owl-next{
+    right: 0;
+}
+
+.owl-dots{
+    position: absolute;
+    width: 100%;
+    top: auto;
+    bottom: 30px;
+}
+
+@media(max-width: 920px){
+    .slider-content h1{
+        font-size: 30px;
+    
+        margin-bottom: 10px;
+    }
+
+    .slider-content-main{
+        
+        padding: 0 20px;
+    }
+
+    .slider-content p{
+        color: white;
+        font-size: 14px;
+        width: 100%;
+        
+        line-height: 18px;
+    }
+
+    .slider-action a{
+        padding: 13px 20px;
+        font-size: 13px;
+        font-weight: 600;
+        
+    }
+
+    .slider-action .slider-btn{
+        
+        margin-right: 20px;
+    }
+
+
+
+}
